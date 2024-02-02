@@ -1,0 +1,50 @@
+*{
+    background-color: #15202B;
+    color: #fff;
+
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: rgb(29, 161, 242);
+    text-decoration: none;
+}
+
+img,
+svg{
+    max-width: 100%;
+    max-height: auto;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerTwitt{
+    border: solid 1px white;
+    width: 650px;
+    height: 400px;
+
+}
+
+.greyText{
+    color: #515b69;
+}
+
+.containerIcons{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.Icon{
+    border: solid 1px white;
+    width: 60px;
+}
+
+.Icon >svg{
+    width: 50%;
+}
