@@ -7,7 +7,7 @@ function sum(a, b) {
 function suma2numeros(callback) {
   const resultadoSuma = sum(1,2);
 
-  // REalice anteriormente varias cosas mas!!! ...
+  // Realice anteriormente varias cosas mas!!! ...
 
   callback(resultadoSuma);
 }
