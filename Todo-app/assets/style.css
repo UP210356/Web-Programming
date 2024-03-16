@@ -1,0 +1,11 @@
+* {
+    background: linear-gradient(to right, skyblue, blue);
+}
+
+body{
+    display: flex;
+
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,8 +1,30 @@
+const userSelect = document.getElementById('select-users');
+const userContainer = document.getElementById('user-container');
+const taskContainer = document.getElementById('task-container');
+
+
 document.addEventListener('DOMContentLoaded', function() {
   // Elementos HTML
-  const userSelect = document.getElementById('select-users');
-  const userContainer = document.getElementById('user-container');
-  const taskContainer = document.getElementById('task-container');
+
+
+  // Funciones
+  /**
+   * Obtiene una lista de todos los usuarios que pueden existir
+   * @returns {Promise<User[]>}
+   */
+  function getAllUsers() {
+    return fetch("data/usuarios.json")
+      .then(resp => resp.json());
+  }
+
+  /**
+   * Obtiene una lista de todas las tareas que hay de todos los usuarios
+   * @returns {Promise<Task[]>}
+   */
+  function getAllTasks() {
+    return fetch("data/tareas.json")
+      .then(resp => resp.json());
+  }
 
   /**
    * Muestra la información del usuario seleccionado
