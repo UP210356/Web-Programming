@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CRUD - ToDo App</a>
+        </div>
+    </nav>
+</header>
+<main class="container-fluid mt-5">
+    <section class="row">
+        <article class="col-4">
+            <div class="card">
+                <header class="card-header">
+                    <h2 class="text-center text-capitalize">Insert Task</h2>
+                </header>
+                <form id="form-task" class="card-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="title" placeholder="Write a task title" required>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" name="userId" required>
+                            <option selected disabled>Select a User</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <textarea placeholder="Write a task's description" class="form-control" name="description" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Save</button>
+                </form>
+            </div>
+        </article>
+        <article class="col-8">
+            <table id="task-table" class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>User</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Tasks will be dynamically populated here -->
+                </tbody>
+            </table>
+        </article>
+    </section>
+</main>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/petitions.js"></script>
+</body>
+</html>
